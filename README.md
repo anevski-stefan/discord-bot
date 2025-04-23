@@ -9,19 +9,6 @@ This is a Discord bot built with Node.js that provides weather & astronomical fo
 - A Discord bot token
 - A WeatherAPI key
 
-## Project Structure
-
-```
-discord-bot/
-├── src/
-│   ├── commands/     # Bot commands
-│   ├── events/       # Discord event handlers
-│   ├── requests/     # API request handlers
-│   └── index.js      # Main bot entry point
-├── package.json
-└── .env
-```
-
 ## Dependencies
 
 - discord.js (v14.15.3) - Discord bot framework
