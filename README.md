@@ -9,6 +9,26 @@ This is a Discord bot built with Node.js that provides weather & astronomical fo
 - A Discord bot token
 - A WeatherAPI key
 
+## Project Structure
+
+```
+discord-bot/
+├── src/
+│   ├── commands/     # Bot commands
+│   ├── events/       # Discord event handlers
+│   ├── requests/     # API request handlers
+│   └── index.js      # Main bot entry point
+├── package.json
+└── .env
+```
+
+## Dependencies
+
+- discord.js (v14.15.3) - Discord bot framework
+- axios (v1.7.2) - HTTP client for API requests
+- dotenv (v16.4.5) - Environment variable management
+- nodemon (v3.1.4) - Development dependency for auto-reloading
+
 ## Setup
 
 1. Clone the repository:
@@ -43,7 +63,7 @@ This is a Discord bot built with Node.js that provides weather & astronomical fo
    npm run start
    ```
 
-   or if you have `nodemon` installed:
+   For development with auto-reloading:
 
    ```bash
    npm run dev
@@ -60,8 +80,8 @@ This is a Discord bot built with Node.js that provides weather & astronomical fo
 ## Commands
 
 - `/forecast [location] (optional argument units)`: Get the weather forecast for the specified location. Optionally, specify the units (e.g., metric or imperial).
-- `/astro [location]`: Get astronomical data for the specified location.
-- `/ping`: Check the bot's response time.
+- `/astro [location]`: Get astronomical data (sun rise/set, moon phase, etc.) for the specified location.
+- `/ping`: Check the bot's response time and connectivity.
 
 ## Example
 
@@ -69,4 +89,9 @@ To get the weather forecast for New York, type the following command in your Dis
 
 ```text
 /forecast New York
+```
+
+For astronomical data:
+```text
+/astro London
 ```
